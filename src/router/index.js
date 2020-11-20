@@ -16,6 +16,11 @@ export default new Router({
       component:  () => import('@/page/index'),
     },
     {
+      path: '/login',
+      name: 'login',
+      component:  () => import('@/page/login'),
+    },
+    {
       path: '/404',
       name: 'notFound',
       component:  () => import('@/page/404')
