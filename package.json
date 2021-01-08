@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "serve-test": "vue-cli-service serve --mode development-test",
     "build": "vue-cli-service build",
+    "build-test": "vue-cli-service build --mode production-test",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -21,7 +23,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "node-sass": "^5.0.0",
+    "node-sass": "^4.5.0",
     "sass-loader": "^10.1.0",
     "vue-template-compiler": "^2.6.11"
   },

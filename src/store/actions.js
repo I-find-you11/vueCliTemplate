@@ -1,8 +1,8 @@
-import { get, post } from '@/api/request'
+import request from '@/utils/request'
+console.log(request)
 const actions = {
   increment({ commit, state }, num) {
     console.log(state)
-    console.log(get, post)
     console.log(num)
     setTimeout(() => {
       commit('increment', num)

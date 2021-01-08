@@ -1,24 +1,26 @@
-# wechat
+# vueCliTemplate
 
-## Project setup
+## 安装依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 运行在开发环境
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 运行在开发环境的测试库
+```
+npm run serve-test
+```
+
+### 运行在生产环境
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 运行在生产环境的测试库
 ```
-npm run lint
+npm run serve-test
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

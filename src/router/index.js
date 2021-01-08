@@ -3,8 +3,11 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+const { VUE_APP_ROUTE } = process.env
+
 export default new Router({
   mode:'history',
+  base: VUE_APP_ROUTE,
   routes: [
     {
       path: '/',
