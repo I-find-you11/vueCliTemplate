@@ -1,4 +1,4 @@
-const https = 'https://dolphin-miniproject.oss-cn-beijing.aliyuncs.com/images/'
+const https = ''
 
 const images = {
   
