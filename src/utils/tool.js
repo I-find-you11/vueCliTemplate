@@ -21,14 +21,38 @@ export const getNowTime = (d) => {
   }
 
   const week = ['日', '一', '二', '三', '四', '五', '六']
-
+  const year = date.getFullYear()
+  const month = date.getMonth() + 1
+  const monthDays = new Date(year, month, 0).getDate()
   return {
-    year: date.getFullYear(),
-    month: date.getMonth() + 1,
+    year,
+    month,
     day: date.getDate(),
     week: date.getDay(),
     mm: date.getMinutes(),
     hh: date.getHours(),
-    weekText: week[date.getDay()]
+    ss: date.getSeconds(),
+    monthDays,
+    weekText: week[date.getDay()],
+    date,
+    timeStamp: +date
   }
+}
+
+// 字符串往前补0
+export const fillInStr = (str, num = 2) => {
+  let s
+  switch (typeof str) {
+    case 'string':
+      s = str
+      break
+    default:
+      s = str.toString()
+      break
+  }
+  const length = s.length
+  for(let i = length; i < num; i++) {
+    s = '0' + s
+  }
+  return s
 }
