@@ -1,5 +1,5 @@
 <template>
-  
+  <div>login</div>
 </template>
 
 <script>
@@ -8,6 +8,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "./index.scss"
+<style lang="less" scoped>
+@import "./index.less";
 </style>

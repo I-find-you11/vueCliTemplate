@@ -5,7 +5,7 @@ Vue.use(Router)
 
 const { VUE_APP_ROUTE } = process.env
 
-export default new Router({
+const router =  new Router({
   mode:'history',
   base: VUE_APP_ROUTE,
   routes: [
@@ -34,3 +34,17 @@ export default new Router({
     }
   ]
 })
+
+router.beforeEach((to, from, next)=>{
+  // 判断本地token自动跳转登录页面
+  const token = localStorage.getItem("token") || 'token'
+  if(!token && to.path != '/login') {
+    const { query, name } = to
+    next({ name: 'login'})
+  }else {
+    next()
+  }
+})
+
+
+export default router

@@ -8,7 +8,17 @@ import store from './store'
 
 // 图片网络地址封装
 import images from './utils/images'
-Vue.prototype.$images = images
+Vue.mixin({
+  data() {
+    return {
+      images: images
+    }
+  }
+})
+
+import './assets/style/style.less'
+import ui from './components/ui'
+Vue.use(ui)
 
 new Vue({
   router,
