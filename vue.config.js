@@ -14,7 +14,7 @@ module.exports = {
     hotOnly: false,
     proxy: {
       '/apis': {
-        target: `${http}://${VUE_APP_URL}`,  //跨域地址
+        target: VUE_APP_URL,  //跨域地址
         changeOrigin: true,  // 是否跨域
         ws: true,  // 是否使用https
         pathRewrite: {
