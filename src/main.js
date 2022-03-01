@@ -15,10 +15,13 @@ Vue.mixin({
     }
   }
 })
+import Antd from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
+Vue.use(Antd);
 
 import './assets/style/style.less'
-import ui from './components/ui'
-Vue.use(ui)
+// import ui from './components/ui'
+// Vue.use(ui)
 
 new Vue({
   router,

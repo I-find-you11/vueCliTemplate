@@ -8,7 +8,9 @@ import state from './getters'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state,
+  state: {
+    globalLoading: false
+  },
   getters,
   actions,
   mutations

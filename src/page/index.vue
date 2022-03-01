@@ -1,13 +1,20 @@
 <template>
   <div>
-    index
+    <p>index</p>
+    <a-button type="primary">
+      Primary
+    </a-button>
   </div>
 </template>
 
 <script>
 export default {
   created () {
-    this.$store.dispatch('increment', 11)
+    // 接口请求示例
+    // this.$store.dispatch('get', { value: 1 }).then(res => {
+    //   // 请求成功以后返回的数据 res
+    //   console.log(res)
+    // })
   }
 }
 </script>
